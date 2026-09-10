@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Clarissa R. Coveney | Mechanoepigenetics</title>
+
+  <style>
+    :root {
+      --navy: #24364b;
+      --burgundy: #7d233d;
+      --gold: #b88a3b;
+      --cream: #faf8f3;
+      --light-blue: #edf3f7;
+      --dark-gray: #333333;
+      --medium-gray: #666666;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--dark-gray);
+      background: var(--cream);
+      line-height: 1.65;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: var(--navy);
+      padding: 14px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 0.95rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f2d18d;
+    }
+
+    .hero {
+      background: var(--white);
+      padding: 70px 20px;
+    }
+
+    .hero-content {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 55px;
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
+    .hero-photo {
+      width: 260px;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 8px solid var(--light-blue);
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    h1 {
+      color: var(--navy);
+      font-size: clamp(2.1rem, 5vw, 4rem);
+      line-height: 1.1;
+      margin: 0 0 12px;
+    }
+
+    h2 {
+      color: var(--burgundy);
+      font-size: 2rem;
+      margin-top: 0;
+    }
+
+    h3 {
+      color: var(--navy);
+    }
+
+    .position {
+      color: var(--burgundy);
+      font-size: 1.15rem;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--burgundy);
+      color: var(--white);
+      padding: 11px 18px;
+      margin-top: 12px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: var(--navy);
+    }
+
+    section {
+      padding: 65px 20px;
+    }
+
+    .section-content {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .blue-section {
+      background: var(--light-blue);
+    }
+
+    .white-section {
+      background: var(--white);
+    }
+
+    .research-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .research-card {
+      background: var(--white);
+      padding: 25px;
+      border-top: 5px solid var(--gold);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .research-card h3 {
+      margin-top: 0;
+    }
+
+    .contact-box {
+      background: var(--navy);
+      color: var(--white);
+      padding: 28px;
+      border-radius: 6px;
+    }
+
+    .contact-box h2 {
+      color: var(--white);
+    }
+
+    .contact-box a {
+      color: #f2d18d;
+    }
+
+    footer {
+      background: #182536;
+      color: var(--white);
+      padding: 25px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 750px) {
+      .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .research-grid {
+        grid-template-columns: 1fr;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 7px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#outside-lab">Outside the Lab</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+
+      <div class="hero-text">
+        <h1>Clarissa R. Coveney, DPhil</h1>
+
+        <p class="position">
+          K99/R00-Funded Postdoctoral Researcher<br>
+          Department of Human Evolutionary Biology<br>
+          Harvard University
+        </p>
+
+        <p>
+          I study how mechanical forces, genetic variation, and evolutionary history
+          shape musculoskeletal development, skeletal morphology, and disease risk.
+        </p>
+
+        <a class="button" href="#research">Explore my research</a>
+      </div>
+
+      <img
+        class="hero-photo"
+        src="images/clarissa-coveney.jpg"
+        alt="Professional headshot of Clarissa R. Coveney"
+      >
+
+    </div>
+  </header>
+
+  <main>
+
+    <section id="about" class="white-section">
+      <div class="section-content">
+        <h2>About Me</h2>
+
+        <p>
+          I am a K99/R00-funded postdoctoral researcher in Dr. Terence Capellini’s
+          laboratory at Harvard University. My research integrates mechanobiology,
+          evolutionary biology, functional genomics, and epigenetics to understand
+          how genetic and environmental factors shape musculoskeletal development,
+          skeletal morphology, and disease risk.
+        </p>
+
+        <p>
+          My current work focuses on understanding how genetic variants—particularly
+          non-coding variants—regulate gene expression in a context-dependent manner.
+          I use high-throughput functional genomic approaches, including Massively
+          Parallel Reporter Assays, mouse models, and humanized variants, to investigate
+          how regulatory elements influence joint morphology, cartilage homeostasis,
+          and musculoskeletal disease.
+        </p>
+
+        <p>
+          My long-term research goal is to understand how mechanical forces shape the
+          genomics of skeletal form and disease.
+        </p>
+      </div>
+    </section>
+
+    <section id="research" class="blue-section">
+      <div class="section-content">
+        <h2>Research</h2>
+
+        <p>
+          My research program is centered on <strong>mechanoepigenetics</strong>:
+          understanding how mechanical forces at the tissue and extracellular matrix
+          levels influence chromatin structure, enhancer activity, gene expression,
+          and disease risk.
+        </p>
+
+        <div class="research-grid">
+
+          <div class="research-card">
+            <h3>Mechanoepigenetics</h3>
+            <p>
+              How do mechanical forces influence chromatin structure, enhancer
+              activity, and gene expression in musculoskeletal tissues?
+            </p>
+          </div>
+
+          <div class="research-card">
+            <h3>Regulatory Genomics</h3>
+            <p>
+              How do non-coding regulatory elements shape joint development,
+              morphology, cartilage homeostasis, and osteoarthritis risk?
+            </p>
+          </div>
+
+          <div class="research-card">
+            <h3>Evolutionary Genetics</h3>
+            <p>
+              How have ancient genetic variants contributed to variation in modern
+              human skeletal biology and disease susceptibility?
+            </p>
+          </div>
+
+        </div>
+
+        <p style="margin-top: 30px;">
+          My work combines mouse models, humanized variants, Massively Parallel
+          Reporter Assays, single-cell multiomics, spatial transcriptomics, chromatin
+          conformation assays, and biomechanical approaches.
+        </p>
+      </div>
+    </section>
+
+    <section id="outside-lab" class="white-section">
+      <div class="section-content">
+        <h2>Outside the Lab</h2>
+
+        <p>
+          Outside the laboratory, I am an international-level coxswain and a
+          passionate endurance athlete. I was part of the winning Head of the Charles
+          crew in 2022 and competed in the Oxford–Cambridge Boat Race in 2017.
+        </p>
+
+        <p>
+          I have also run marathons in Helsinki, Edinburgh, and Chicago, coached
+          novice rowers at St Edmund Hall, Oxford, and helped organize Oxford
+          University Boat Club alumni races.
+        </p>
+
+        <p>
+          I enjoy the parallels between scientific research and rowing: both require
+          teamwork, persistence, attention to detail, and the ability to work toward
+          a long-term goal.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="blue-section">
+      <div class="section-content">
+        <div class="contact-box">
+          <h2>Contact</h2>
+
+          <p>
+            Clarissa R. Coveney, DPhil<br>
+            Department of Human Evolutionary Biology<br>
+            Harvard University
+          </p>
+
+          <p>
+            Email:
+            <a href="mailto:clarissa_coveney@fas.harvard.edu">
+              clarissa_coveney@fas.harvard.edu
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Clarissa R. Coveney</p>
+  </footer>
+
+</body>
+</html>
