@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#faf8f3"/>
+
+  <!-- Upper bone -->
+  <path
+    d="M20 8
+       C15 8 12 12 13 17
+       C14 21 18 23 22 22
+       L28 30
+       L36 24
+       L30 16
+       C30 12 26 8 20 8Z"
+    fill="#7d233d"/>
+
+  <!-- Lower bone -->
+  <path
+    d="M44 56
+       C49 56 52 52 51 47
+       C50 43 46 41 42 42
+       L36 34
+       L28 40
+       L34 48
+       C34 52 38 56 44 56Z"
+    fill="#24364b"/>
+
+  <!-- Joint -->
+  <circle cx="32" cy="32" r="9" fill="#b88a3b"/>
+  <circle cx="32" cy="32" r="4" fill="#faf8f3"/>
+
+  <!-- Outline -->
+  <path
+    d="M20 8
+       C15 8 12 12 13 17
+       C14 21 18 23 22 22
+       L28 30
+       M36 34
+       L42 42
+       C46 41 50 43 51 47
+       C52 52 49 56 44 56
+       C38 56 34 52 34 48
+       M28 30
+       L22 22
+       M36 24
+       L42 42"
+    fill="none"
+    stroke="#222222"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+</svg>
