@@ -152,6 +152,73 @@
       font-style: italic;
     }
 
+    .media-section {
+  border-top: 1px solid var(--line);
+  padding: 38px 0 45px;
+}
+
+.media-item {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 30px;
+  align-items: start;
+  margin-bottom: 50px;
+  max-width: 850px;
+}
+
+.media-images {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.media-images a {
+  display: block;
+}
+
+.media-image {
+  width: 130px;
+  height: auto;
+  display: block;
+  border: 1px solid var(--line);
+}
+
+.media-image:hover {
+  opacity: 0.8;
+}
+
+.media-text {
+  margin: 0;
+}
+
+.media-text strong {
+  color: var(--text);
+}
+
+.media-text a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.media-text a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .media-item {
+    display: block;
+  }
+
+  .media-images {
+    margin-bottom: 20px;
+  }
+
+  .media-image {
+    width: 120px;
+  }
+}
+
     strong {
       font-weight: bold;
     }
@@ -227,7 +294,7 @@
         My research integrates mechanobiology, evolutionary biology, functional
         genomics, and epigenetics to understand musculoskeletal development,
         skeletal morphology, and disease.
-        13 peer reviewed articles (6 first author), 1 under review, 1 first author pre print, and one more first author article in prep.
+        I have published 13 peer-reviewed articles, including 6 first-author papers, and currently have 1 first-author preprint, 1 manuscript under review, and 1 additional first-author manuscript in preparation.
       </p>
     </header>
 
@@ -442,6 +509,93 @@
 
     </section>
 
+  <section class="media-section">
+
+  <h2>Selected Other Media</h2>
+
+  <div class="media-item">
+
+    <div class="media-images">
+
+      <a href="gdf5-cover.png" target="_blank">
+        <img
+          class="media-image"
+          src="gdf5-cover.png"
+          alt="Journal cover featuring the GDF5 publication"
+        >
+      </a>
+
+      <a href="gdf5-highlight.png" target="_blank">
+        <img
+          class="media-image"
+          src="gdf5-highlight.png"
+          alt="Journal highlight for the GDF5 publication"
+        >
+      </a>
+
+    </div>
+
+    <p class="media-text">
+      <strong>
+        Our GDF5 paper was selected as a journal highlight and for the
+        journal cover.
+      </strong>
+      <br>
+      <a href="gdf5-cover.png" target="_blank">
+        View the journal cover
+      </a>
+      <br>
+      <a href="gdf5-highlight.png" target="_blank">
+        View the journal highlight
+      </a>
+    </p>
+
+  </div>
+
+  <div class="media-item">
+
+    <div class="media-images">
+
+      <a href="ift88-cover.png" target="_blank">
+        <img
+          class="media-image"
+          src="ift88-cover.png"
+          alt="Journal cover featuring the IFT88 publication"
+        >
+      </a>
+
+    </div>
+
+    <p class="media-text">
+      <strong>
+        Our IFT88 paper was selected for the journal cover.
+      </strong>
+      <br>
+      <a href="ift88-cover.png" target="_blank">
+        View the journal cover
+      </a>
+    </p>
+
+  </div>
+
+  <p>
+    For a full list of publications, please see my
+    <a href="cv.html">CV</a> or
+    <a href="https://scholar.google.com/" target="_blank">
+      Google Scholar
+    </a>.
+  </p>
+
+    <p>
+  For a full list of publications, please see my
+  <a href="cv.html">CV</a> or
+  <a href="https://scholar.google.com/citations?user=xfLAYDMAAAAJ&hl=en" target="_blank">
+    Google Scholar
+  </a>.
+</p>
+
+</section>
+    
   </main>
 
   <footer>
